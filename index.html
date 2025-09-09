@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EXOR — Consultoría en Gestión del Cambio</title>
+  <meta name="description" content="EXOR acompaña a organizaciones en la gestión del cambio: adopción tecnológica, transformación cultural y capacitación de equipos." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#ff6f61;--dark:#0b0b0b;--muted:#d1d5db;--card:#1a1a1a}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--dark);color:white}
+    header{background:var(--dark);border-bottom:1px solid #2a2a2a}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{font-weight:800;letter-spacing:0.5px;color:var(--accent)}
+    .navlinks{display:flex;gap:16px;align-items:center}
+    .navlinks a{color:white;text-decoration:none}
+    .cta{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:56px 0}
+    .eyebrow{color:var(--accent);font-weight:700;margin-bottom:12px}
+    h1{font-size:36px;margin:0 0 16px;color:white}
+    p.lead{color:var(--muted);line-height:1.6}
+    .hero-card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+    .stats{display:flex;gap:12px;margin-top:16px}
+    .stat{background:#2a2a2a;padding:12px;border-radius:8px;text-align:center}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+    .step{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:48px 0}
+    .service{background:var(--card);padding:20px;border-radius:10px;text-align:center}
+    .service img{width:100%;border-radius:8px;margin-bottom:10px}
+    .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .case{background:var(--card);padding:18px;border-radius:10px}
+    footer{padding:36px 0;margin-top:48px;background:#111}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.services,.process,.cases{grid-template-columns:1fr}.container{padding:18px}}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a2a;margin-top:8px;background:#111;color:white}
+    form button{margin-top:12px;padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:600}
+    .hero-img{width:100%;border-radius:12px;overflow:hidden}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">EXOR</div>
+        <div class="navlinks">
+          <a href="#servicios">Servicios</a>
+          <a href="#casos">Casos</a>
+          <a href="#clientes">Clientes</a>
+          <a href="#contacto" class="cta">Contáctanos</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">GESTIÓN DEL CAMBIO</div>
+        <h1>EXOR acompaña las transformaciones para que las personas adopten el cambio</h1>
+        <p class="lead">Diseñamos e implementamos estrategias de adopción y formación que garantizan que las soluciones tecnológicas y organizacionales generen valor real y sostenido.</p>
+        <div class="stats" aria-hidden>
+          <div class="stat"><strong>+200</strong><div class="muted">Proyectos</div></div>
+          <div class="stat"><strong>+5.000</strong><div class="muted">Usuarios impactados</div></div>
+        </div>
+
+        <div class="process" aria-label="Nuestra metodología">
+          <div class="step"><strong>Diagnóstico</strong><div class="muted">Mapeo de actores y riesgos</div></div>
+          <div class="step"><strong>Diseño</strong><div class="muted">Planes de adopción y comunicación</div></div>
+          <div class="step"><strong>Implementación</strong><div class="muted">Capacitación y acompañamiento</div></div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-labelledby="contact-title">
+        <img class="hero-img" src="A_webpage_for_EXOR,_a_change_management_consultanc.png" alt="Personas en reunión de trabajo">
+        <h3 id="contact-title">¿Quieres una evaluación gratuita?</h3>
+        <p class="muted">Déjanos tus datos y nos pondremos en contacto para planificar un diagnóstico inicial.</p>
+        <form id="contact-form" action="https://formspree.io/f/your-endpoint" method="POST">
+          <label>Nombre<input type="text" name="name" required></label>
+          <label>Empresa<input type="text" name="company"></label>
+          <label>Correo electrónico<input type="email" name="email" required></label>
+          <label>Mensaje<textarea name="message" rows="4"></textarea></label>
+          <button type="submit">Solicitar diagnóstico</button>
+        </form>
+      </aside>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="services">
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Adopción tecnológica">
+          <h4>Adopción tecnológica</h4>
+          <p>Planes alineados con SAP, Salesforce, Microsoft u otras herramientas para asegurar adopción real.</p>
+        </div>
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Transformación cultural">
+          <h4>Transformación cultural</h4>
+          <p>Programas de comunicación, líderes y embajadores que sostienen el cambio en el tiempo.</p>
+        </div>
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="Capacitación y Academy">
+          <h4>Capacitación y Academy</h4>
+          <p>Formación práctica para usuarios y líderes: learning journeys y microlearning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="casos">
+      <h2>Casos de éxito</h2>
+      <div class="cases">
+        <article class="case">
+          <h4>Cliente A — Adopción SAP</h4>
+          <p>Proyecto global con onboarding de +1.000 usuarios y seguimiento por 12 meses.</p>
+        </article>
+        <article class="case">
+          <h4>Cliente B — Transformación de ventas</h4>
+          <p>Rediseño de procesos y desarrollo de skills comerciales con impacto en productividad.</p>
+        </article>
+        <article class="case">
+          <h4>Cliente C — Adopción IA</h4>
+          <p>Programa de aceptación y uso para soluciones con IA en equipos operativos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="clientes">
+      <h2>Clientes que han confiado en nosotros</h2>
+      <div class="cases">
+        <article class="case">
+          <h4>División Codelco Chuquicamata</h4>
+          <p>Acompañamiento en proyectos de transformación cultural y tecnológica.</p>
+        </article>
+        <article class="case">
+          <h4>Codelco Radomiro Tomic</h4>
+          <p>Implementación de estrategias de gestión del cambio en procesos operativos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Listo para empezar? Escríbenos y diseñamos un plan a medida.</p>
+      <form action="https://formspree.io/f/your-endpoint" method="POST">
+        <label>Nombre<input name="name" required></label>
+        <label>Empresa<input name="company"></label>
+        <label>Correo<input type="email" name="email" required></label>
+        <label>Teléfono<input name="phone"></label>
+        <label>Mensaje<textarea name="message" rows="5"></textarea></label>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong style="color:var(--accent)">EXOR</strong><div style="color:var(--muted)">Consultoría en gestión del cambio</div>
+        </div>
+        <div style="color:var(--muted)">© 2025 EXOR. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
